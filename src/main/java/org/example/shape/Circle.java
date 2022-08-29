@@ -6,17 +6,12 @@ public class Circle extends Shape {
 
     public Circle(double radius) {
         this.radius = radius;
-        area = Math.PI * Math.pow(radius, 2);
         shapeName = "Circle";
-    }
-
-    public void setRadius(double radius) {
-        this.radius = radius;
-        area = Math.PI * Math.pow(radius, 2);
     }
 
     @Override
     public double getArea() {
+        area = Math.PI * Math.pow(radius, 2);
         return area;
     }
 }
