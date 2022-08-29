@@ -8,7 +8,7 @@ public class SquareTest {
 
     @Test(groups = {"SquareTest", "positive"})
     public void sideTest() {
-        assertTrue(side1 > 0);
+        assertTrue(String.format("square side < 0"), side1 > 0);
     }
 
     @Test(expectedExceptions = NumberFormatException.class)

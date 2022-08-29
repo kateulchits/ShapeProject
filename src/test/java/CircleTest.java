@@ -12,6 +12,7 @@ double expectedArea1 = 78.5;
 @Test(groups = {"CircleTests", "negative"})
 public void areaTest() {
     Circle circle1 = new Circle(radius1);
-    assertEquals(circle1.getArea(), expectedArea1);
+    double realArea1 = circle1.getArea();
+    assertEquals(String.format("wrong circle area"), realArea1, expectedArea1);
 }
 }

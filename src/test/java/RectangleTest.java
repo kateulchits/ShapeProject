@@ -17,6 +17,7 @@ public class RectangleTest {
     @Test(groups = {"RectangleTests", "negative"})
     public void rectangleArea() {
         Rectangle rectangle1 = new Rectangle(firstSide1, secondSide2);
-        assertEquals(expectedArea1, rectangle1.getArea());
+        double realArea1 = rectangle1.getArea();
+        assertEquals(String.format("wrong rectangle area"), expectedArea1, realArea1);
     }
 }
