@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="TestSuiteName">
     <test name="Negative tests" parallel="true" thread-count="5">
@@ -7,5 +7,9 @@
                 <include name="negative"/>
             </run>
         </groups>
+        <classes>
+            <class name="RectangleTest"/>
+            <class name="CircleTest"/>
+        </classes>
     </test>
 </suite>

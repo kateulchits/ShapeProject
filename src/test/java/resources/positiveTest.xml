@@ -7,5 +7,9 @@
                 <include name="positive"/>
             </run>
         </groups>
+        <classes>
+            <class name="RectangleTest"/>
+            <class name="SquareTest"/>
+        </classes>
     </test>
 </suite>
